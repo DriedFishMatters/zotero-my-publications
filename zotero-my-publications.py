@@ -48,7 +48,7 @@ TEMPLATE = """<!doctype html>
   </head>
   <body style="background:#eee">
       <div class="container p-5 my-4 bg-white">
-      <header><a href="URL"><img src="{LOGO}"></a></header>
+      <header><a href="{URL}"><img src="{LOGO}"></a></header>
       <h1 class="text-center display-3">Publications</h1>
       </div>
       <footer class="footer my-4">
