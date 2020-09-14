@@ -109,7 +109,7 @@ for item in items:
     abstract = item['data'].get('abstractNote')
     if abstract:
         abs = bib.new_tag('blockquote')
-        abs['class'] = 'mx-3'
+        abs['class'] = 'px-5'
         abs.string = abstract
         bib.p.append(abs)
 
