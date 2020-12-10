@@ -97,6 +97,9 @@ for item in items:
     if item['meta'].get('numChildren', 0) > 0:
         attachments = zot.children(item['key'])
         for a in attachments:
+            # ignore notes
+            if a['data'].get('itemType', None) == 'note':
+                continue
             button = bib.new_tag('a')
             if a['data']['url']:
                 button['href'] = a['data']['url']
